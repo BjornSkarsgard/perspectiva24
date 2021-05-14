@@ -1,0 +1,53 @@
+.advantage {
+    padding: 0 !important;
+    &__wrapper {
+        max-width: none !important;
+        padding: 0 !important;
+    }
+    &__cards {
+
+    }
+    &__card {
+        list-style: none;
+        width: 302px;
+        height: 320px;
+        min-width: 302px;
+        box-sizing: border-box;
+        padding: 45px 19px 20px 19px;
+        background-color: #F5F5F5;
+        border-radius: 5px;
+        margin-right: 16px;
+        box-shadow: 2px 2px 20px rgba(0, 0, 0, 0);
+        transition: background-color .3s ease-in-out, box-shadow .3s ease-in-out;
+        &::before {
+            content: none;
+        }
+        &:hover {
+            background-color: #FCFCFC;
+            box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.25%);
+        }
+    }
+
+    &__title {
+        margin: 0;
+        font-size: 22px;
+        margin-bottom: 30px;
+        height: 50px;
+        font-weight: 400;
+    }
+
+    &__desc-small {
+        color: #0099EA;
+        background-color: #0098ea20;
+        padding: 5px 15px 8px 15px;
+        font-size: 16px;
+        border-radius: 15px;
+        margin-bottom: 30px;
+    }
+
+    &__desc {
+        font-size: 16px;
+        color: #71707080;
+        padding: 0;
+    }
+}

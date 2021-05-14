@@ -1,0 +1,110 @@
+.btn_b {
+    background-color: #0099EA;
+    font-size: 16px;
+    color: #ffffff;
+    border: 1px solid #007BFF;
+    border-radius: 5px;
+    line-height: 20px;
+    padding: 12px;
+}
+.about-us {
+    padding: 50px 0;
+    &__block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        h1 {
+            align-self: flex-start;
+            font-size: 30px;
+            margin: 0;
+            margin-bottom: 30px;
+            padding-left: 16px;
+        }
+    }
+
+    &__cards {
+        padding: 0 16px;
+        margin: 0;
+        margin-bottom: 36px;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
+    }
+    
+    &__card {
+        padding: 0;
+        margin: 0;
+        width: 302px;
+        height: 430px;
+        border: 1px solid #e6e6e6;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        &-img {
+            margin-bottom: 50px;
+        }
+        &-text  {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            padding: 0 16px 30px 16px;
+        }
+        &-title {
+            font-size: 20px;
+            line-height: 28px;
+            color: #333333;
+            margin: 0;
+            height: 60px;
+            margin-bottom: 22px;
+            // margin-bottom: 50px;
+        }
+
+        &-desc {
+            font-size: 16px;
+            color: #000000;
+            margin: 0;
+            // margin-top: auto;
+            
+        }
+    }
+
+    &__tooltip {
+        position: absolute;
+        top: 0;
+        right: 16px;
+        width: 22px;
+        height: 22px;
+        background-image: ur('../static/img/content/tooltip.svg');
+        cursor: pointer;
+        &:hover {
+            span {
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+        svg {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+        span {
+            position: absolute;
+            opacity: 0;
+            visibility: hidden;
+            width: 250px;
+            top: -30px;
+            right: 20px;
+            transition: opacity .2s ease-in-out;
+            background-color: #e3e3e3;
+            z-index: 5;
+            padding: 10px 15px;
+            border-radius: 5px;
+        }
+    }
+}

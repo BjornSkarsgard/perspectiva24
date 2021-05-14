@@ -1,0 +1,133 @@
+.step {
+    padding: 0;
+    background-color: #F5F5F6;
+    &__wrapper {
+        max-width: none !important;
+        padding: 0 !important;
+    }
+    & .slick-slide {
+        padding: 0 31px;
+    }
+    &__block {
+        &-item {
+            padding: 0;
+            margin: 0;
+        }
+        & ul {
+                
+            & li.step__block-item {
+                
+                &::before {
+                    content: none;
+                }
+            }
+        }
+    }
+
+    &__card {
+        height: 726px;
+        width: 974px;
+        padding: 50px 55px;
+        background-color: #fff;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+
+        &-photo {
+            width: 300px;
+            min-width: 300px;
+            display: flex;
+            flex-direction: column;
+        }
+
+
+        &-desc{
+            margin-top: -8px;
+            display: flex;
+            flex-direction: column;
+            margin-left: 84px;
+            width: 100%;
+        }
+
+    }
+
+    &__photo-wrapper {
+        width: 300px;
+        height: 364px;
+        margin-bottom: 54px;
+    }
+
+    &__desc {
+        &-wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin-left: 32px;
+        }
+        &-title {
+            font-size: 28px;
+            text-align: left;
+            margin: 0;
+            position: relative;
+            display: inline-block;
+            margin-bottom: 40px;
+            &::before {
+                content: "";
+                position: absolute;
+                left: 0;
+                bottom: -16px;
+                width: 100%;
+                height: 4px;
+                background-color: #D2202B;
+            }
+            & span {
+                text-align: right;
+                font-size: 28px;
+                color: #D2202B;
+                margin-left: 16px;
+            }
+        }
+
+        &-btext {
+            display: inline-block;
+            margin: 0;
+            font-size: 16px;
+            text-align: left;
+            max-width: 252px;
+        }
+    }
+
+    &__day-desc {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    &__day-text {
+        font-size: 22px;
+        color: #6F6C6C;
+        width: 100%;
+        margin-bottom: 24px;
+        margin-top: 8px;
+    }
+
+    &__day {
+        width: 240px;
+        &--long {
+            width: auto;
+            margin-top: 28px;
+        }
+        li {
+            color: #71707080;
+            font-size: 16px;
+            margin: 0;
+            margin-right: 20px;
+            margin-bottom: 12px;
+
+            &::before {
+                background-color: #71707080;
+                width: 5px;
+                height: 5px;
+            }
+        }
+    }
+}

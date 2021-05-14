@@ -1,0 +1,33 @@
+doctype html
+html(class="no-js", lang="ru")
+
+    include ../components/head/head.pug
+    include ../components/promo/promo.pug
+    include ../components/about-us/about-us.pug
+    include ../components/create-agent/create-agent.pug
+    include ../components/banner/banner.pug
+    include ../components/advantage/advantage.pug
+    include ../components/step/step.pug
+
+    head
+        +head(head.defaults)
+    body
+        main.main 
+            section.section.promo
+                +promo()
+            section.section.about-us 
+                +about-us()
+            section.section.create-agent 
+                +create-agent()
+            section.section.banner 
+                +banner()
+            section.section.advantage
+                +advantage()
+            section.section.step
+                +step()
+
+        script(src='%=static=%js/separate-js/svg4everybody.min.js')
+        script svg4everybody();
+
+        //- Main scripts. You can replace it, but I recommend you to leave it here
+        script(src='%=static=%js/main%=hash=%%=min=%.js')

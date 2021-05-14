@@ -1,0 +1,67 @@
+/*vacancy */
+.section__wrapper {
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+.btn_r {
+    background-color: #D2202B;
+    font-size: 16px;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    line-height: 20px;
+    padding: 12px;
+}
+
+.promo {
+    padding: 50px 0;
+    background: rgb(33,149,210);
+    background: linear-gradient(39deg, rgba(33,149,210,1) 0%, rgba(18,124,184,1) 100%);
+    overflow: hidden;
+    &__block {
+        padding: 0 16px;
+        display: flex;
+        position: relative;
+    }
+    &__text-block {
+        .btn {
+
+            padding: 13px;
+        }
+        h1{
+            color: #ffffff;
+            font-size: 30px;  
+            margin: 0;
+            margin-bottom: 32px;  
+        }
+
+        .promo__items {
+            margin: 0;
+            margin-left: 25px;
+            margin-bottom: 87px;
+        }
+    }
+
+    &__image-block {
+        position: absolute;
+        right: 0;
+        bottom: -85px;
+    }
+}
+
+.promo__items li:before {
+    width: 10px;
+    height: 10px;
+    background-color: #B0ACAC;
+    left: -25px;
+    top: 6px;
+}
+
+.promo__items li {
+    font-size: 16px;
+    color: #ffffff;
+    padding: 0; 
+}
