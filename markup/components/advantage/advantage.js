@@ -12,7 +12,7 @@ block.slick({
     centerMode: true,
     centerPadding: '60px',
     swipeToSlide: 2,
-    initialSlide: 2,
+    initialSlide: 1,
     dots: true,
     
     responsive: [

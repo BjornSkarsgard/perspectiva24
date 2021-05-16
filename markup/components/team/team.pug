@@ -1,0 +1,24 @@
+mixin team(data)
+    .section__wrapper
+        .team__block
+            h1.team__title Присоединяйся к нашей команде
+            .team__slider
+                ul
+                    li 
+                        img(src="../static/img/content/team1.png", alt="Фотография", width="688", height="488")
+                    li 
+                        img(src="../static/img/content/team2.png", alt="Фотография", width="688", height="488")
+                    li 
+                        img(src="../static/img/content/team3.png", alt="Фотография", width="688", height="488")   
+                .team__slider-controls
+                    span.team__slider-arrow.team__slider-arrow--prev
+                    span.team__slider-arrow.team__slider-arrow--next
+            .team__form
+                form(action="")
+                    input(type="text", name="name")
+                    input(type="number", name="phone")
+                    select(name="vacancy").team__select
+                        option(value="manager") Менеджер по продажам
+                        option(value="spammer") Спамер звонков
+                        option(value="genDir") Генеральный директор
+                        option(value="chel") Просто чел    
