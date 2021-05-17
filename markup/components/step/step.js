@@ -9,5 +9,7 @@ block.slick({
     slidesToScroll: 1,
     centerMode: true,
     centerPadding: '60px',
-    dots: true,
+    dots: false,
+    prevArrow: $('.step__slider-arrow--prev'),
+    nextArrow: $('.step__slider-arrow--next')
 })

@@ -4,9 +4,14 @@ mixin advantage(data)
     -var desc = ['Выполняйте обязательные действия, которые предписаны системой, даже не имея опыта работы', '1 неделю, за время которой можно овладеть технологией работы агента по недвижимости и зарабатывать на ней всю жизнь', 'Возможность получить и использовать авторские технологии, разработанные компанией.', 'сопроводит на всех этапах работы, то есть всегда. Проведет за ручку и покажет. И будет заинтересован в твоем результате.', 'сопроводит на всех этапах работы, то есть всегда. Проведет за ручку и покажет. И будет заинтересован в твоем результате.', 'добившиеся результата и которым также помогали более опытные товарищи. ', 'будет царить дружеская, семейная атмосфера, где твоим результатам реально рады, а не завидуют', 'безопасность и выгода клиента превыше всего. Клиент всегда  получает качественную услугу.', 'получателя зарплаты с ограничением по величине, и перестроить мышление на зарабатывание без потолка и ограничений.', 'сопроводит на всех этапах работы, то есть всегда. Проведет за ручку и покажет. И будет заинтересован в твоем результате.', 'получателя зарплаты с ограничением по величине, и перестроить мышление на зарабатывание без потолка и ограничений.', 'сопроводит на всех этапах работы, то есть всегда. Проведет за ручку и покажет. И будет заинтересован в твоем результате.']
     .section__wrapper.advantage__wrapper
         .advantage__block
-            h1.advantage__title Что ты получишь, работая с нами
-            .advantage__cards-wrapepr 
-                ul.advantage__cards
+            .section__wrapper
+                .advantage__top-block
+                    h1.advantage__top-title Что ты получишь, работая с нами
+                    .advantage__slider-controls
+                        span.advantage__slider-arrow.advantage__slider-arrow--prev
+                        span.advantage__slider-arrow.advantage__slider-arrow--next
+            .advantage__cards-wrapper 
+                ul.advantage__cards.advantage__cards--left
                     -var i = 0
                     -var g = 0
                     each val in title
@@ -17,5 +22,26 @@ mixin advantage(data)
                                 p.advantage__desc=desc[i]
                                 -i++
                                 -g++
-            .adventage__slider-control
-                span
+                ul.advantage__cards.advantage__cards--right
+                    -var i = 0
+                    -var g = 0
+                    each val in title
+                        li
+                            .advantage__card
+                                h3.advantage__title=val
+                                span.advantage__desc-small=small[i] 
+                                p.advantage__desc=desc[i]
+                                -i++
+                                -g++
+                ul.advantage__cards.advantage__cards--center
+                    -var i = 0
+                    -var g = 0
+                    each val in title
+                        li
+                            .advantage__card
+                                h3.advantage__title=val
+                                span.advantage__desc-small=small[i] 
+                                p.advantage__desc=desc[i]
+                                -i++
+                                -g++
+            

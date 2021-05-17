@@ -1,6 +1,12 @@
 mixin step(data)
     .section__wrapper.step__wrapper
         .step__block
+            .section__wrapper
+                .step__top-block
+                    h1.step__title Этапы ввода в профессию Агента
+                    .step_slider-controls
+                        span.step__slider-arrow.step__slider-arrow--prev
+                        span.step__slider-arrow.step__slider-arrow--next
             ul.step__slick
                 li.step__block-item
                     .step__card 
@@ -93,7 +99,7 @@ mixin step(data)
                              .step__desc-wrapper 
                                 p.step__desc-title Выход на работу
                                 p.step__desc-btext 
-                                    |Практика в собственном учебной центре 
+                                    |Практика в собственном учебном центре 
                                     br
                                     |Практику ведут действующие агента и руководители
                         .step__card-desc 

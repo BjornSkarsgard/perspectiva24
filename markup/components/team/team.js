@@ -5,7 +5,10 @@ import slick from "slick-carousel"
 let slider = $(".team__slider ul")
 
 $(document).ready(function() {
-    $('.team__select').select2();
+    $('.team__select').select2({
+        placeholder: "Вакансия",
+        allowClear: true
+    });
 });
 
 slider.slick({

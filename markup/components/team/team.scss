@@ -1,11 +1,31 @@
 .team {
+    padding-bottom: 86px;
     background: rgb(33,149,210);
     background: linear-gradient(39deg, rgba(33,149,210,1) 0%, rgba(18,124,184,1) 100%);
+    & li {
+        margin: 0;
+    }
+    &__block {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    &__title {
+        width: 100%;
+        text-align: center;
+        color: white;
+    }
     &__slider {
         width: 688px;
         height: 488px;
         padding: 0;
-        margin: 0;
+        box-sizing: content-box;
+        padding: 0 54px;
+        position: relative;
+        & ul {
+            margin: 0;
+        }
         & li {
             width: 688px;
             height: 488px;
@@ -17,6 +37,9 @@
             }
         }
         &-controls {
+            position: absolute;
+            left: 0;
+            top: calc(50% - 15px);
             display: flex;
             width: 100%;
             justify-content: space-between;
@@ -103,4 +126,92 @@
             }
         }
     }
+
+    &__politics {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        input:checked + span svg{
+            opacity: 1;
+        }
+        & span {
+            -webkit-user-select: none;
+            user-select: none;
+            display: inline-block;
+            font-size: 14px;
+            color: #333333;
+            text-align: center;
+            position: relative;
+            padding-left: 25px;
+            cursor: pointer;
+            &::before {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 2px;
+                width: 14px;
+                height: 14px;
+                border: 1px solid #AAAAAA;
+            }
+
+            & svg {
+                opacity: 0;
+                position: absolute;
+                left: 5px;
+                top: 2px;
+            }
+        }
+    }
+    &__select-block {
+        display: flex;
+        margin-bottom: 105px;
+        flex-direction: column;
+        width: 100%;
+    }
+    &__form {
+        width: 450px;
+        background-color: #fff;
+        padding: 43px 25px;
+        
+        & form {
+            display: flex;
+            flex-direction: column;
+            
+            & input {
+                border: 1px solid #AAAAAA;
+                border-radius: 3px;
+                font-size: 16px;
+                color: #333333;
+                line-height: 20px;
+                text-align: left;
+                padding: 12px 9px;
+                margin-bottom: 24px;
+                &::placeholder {
+                    font-size: 16px;
+                    color: #333333;
+                    line-height: 20px;
+                    text-align: left;
+                }
+            }
+        }
+    }
+}
+
+.select2-container li::before {
+    content: none;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__placeholder {
+    font-size: 16px;
+    color: #333333;
+    line-height: 20px;
+    text-align: left;
+}
+.select2-selection.select2-selection--single {
+
+    height: 46px;
+    padding: 7px 0px;
+}
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+    height: 48px;
 }
