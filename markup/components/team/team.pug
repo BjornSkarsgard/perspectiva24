@@ -13,17 +13,18 @@ mixin team(data)
                 .team__slider-controls
                     span.team__slider-arrow.team__slider-arrow--prev
                     span.team__slider-arrow.team__slider-arrow--next
-            .team__form
+            .team__form#form
                 form(action="")
-                    input(type="text", name="name", placeholder="Имя")
-                    input(type="number", name="phone" placeholder="Телефон")
+                    input(type="text", name="name", placeholder="Имя", required)
+                    input(type="number", name="phone", placeholder="Телефон", required)
                     .team__select-block
-                        select(name="vacancy").team__select
+                        select(name="vacancy", required).team__select
                             option 
-                            option(value="manager") Менеджер по продажам
-                            option(value="spammer") Спамер звонков
-                            option(value="genDir") Генеральный директор
-                            option(value="chel") Просто чел    
+                            option(value="intern") Стажер
+                            option(value="agent") Агент
+                            option(value="headSales") Руководитель отдела продаж
+                            option(value="dirdSales") Руководитель департамента продаж  
+                            option(value="director") Директор офиса
                     button.btn.btn_b(type="submit") Записаться на собеседование
                     label.team__politics
                         input#politics(type="checkbox", name="politics")

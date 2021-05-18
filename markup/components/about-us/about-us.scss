@@ -9,6 +9,17 @@
 }
 .about-us {
     padding: 50px 0;
+    @media (max-width: 1299px) {
+        padding: 26px 0;    
+        max-width: 1000px;
+        margin: 0 auto;     
+       }
+    @media (max-width: 999px) {
+     padding: 26px 0;    
+     max-width: 750px;
+     margin: 0 auto;       
+    }
+
     &__block {
         display: flex;
         flex-direction: column;
@@ -20,6 +31,10 @@
             margin: 0;
             margin-bottom: 30px;
             padding-left: 16px;
+            @media (max-width: 999px) {
+                font-size: 24px; 
+                margin-bottom: 74px;
+            }
         }
     }
     &__cards {
@@ -30,11 +45,18 @@
         flex-direction: row;
         width: 100%;
         justify-content: space-between;
-        @media (max-width: 1300px) {
-            flex-direction: column;
-            align-items: center;
+        @media (max-width: 1299px) {
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-items: normal;
+            margin-bottom: 6px;
+            justify-content: space-between;
         }
-
+        
+        @media (max-width: 749px) {
+            justify-content: center;
+            margin: 5px;
+        }
     }
     
     &__card {
@@ -46,15 +68,26 @@
         box-sizing: border-box;
         display: flex;
         flex-direction: column;
-        @media (max-width: 1300px) {
-            width: 376px;  
+        @media (max-width: 1299px) {
+            width: 315px;
+            height: auto;
             margin-bottom: 27px;
-            height: auto; 
+        }
+        @media (max-width: 999px) {
+            width: 351px;
+            height: auto;
+            margin-bottom: 27px;
+        }
+        
+        @media (max-width: 749px) {
+            min-width: 376px;
+            width: 100%;
+            height: auto;
         }
         &-img {
             margin-bottom: 50px;
             & img {
-                @media (max-width: 1300px) {
+                @media (max-width: 1299px) {
                     width: 100%;
                 }
             }
@@ -73,9 +106,9 @@
             margin: 0;
             height: 60px;
             margin-bottom: 22px;
-            @media (max-width: 1300px) {
+            @media (max-width: 1299px) {
                 height: auto;
-                margin-bottom: 50px;
+                margin-bottom: 64px;
                 padding-right: 25px;
             }
         }
@@ -84,7 +117,7 @@
             font-size: 16px;
             color: #000000;
             margin: 0;
-            @media (max-width: 1300px) {
+            @media (max-width: 1299px) {
                 max-width: 247px;
             }
             
