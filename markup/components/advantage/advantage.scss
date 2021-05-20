@@ -1,6 +1,6 @@
 .advantage {
     padding: 0 0 85px 0;
-    max-width: 1920px;
+    // max-width: 1920px;
     margin: 0 auto;
     &__wrapper {
         max-width: none !important;
@@ -20,20 +20,20 @@
         }
     }
     &__block {
-        max-width: 1920px;
+        // max-width: 1920px;
         margin: 0 auto;
         overflow: hidden;
     }
     &__cards {
         margin: 0;
         margin: 0 auto;
-        max-width: 1300px;
+        // max-width: 1300px;
         margin-right: -20px;
         &-wrapper {
             position: relative;
             width: 100%;
             margin: 0 auto;
-            max-width: 1300px;
+            // max-width: 1300px;
         }
         &--left {
             position: absolute;
@@ -306,3 +306,62 @@
         }
     }
 }
+
+.owl-item {
+    opacity: 0.3;
+    &.active {
+        opacity: 1;
+    }
+}
+
+
+.owl-stage {
+    left: -200px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

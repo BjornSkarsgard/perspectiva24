@@ -8,7 +8,6 @@ slider.slick({
     centerMode: true,
     slidesToShow: 1,
     infinite: false,
-    // slidesToScroll: 1,
     touchThreshold: 10,
     variableWidth: true,
     swipeToSlide: true,

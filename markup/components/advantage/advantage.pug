@@ -11,29 +11,29 @@ mixin advantage(data)
                         span.advantage__slider-arrow.advantage__slider-arrow--prev
                         span.advantage__slider-arrow.advantage__slider-arrow--next
             .advantage__cards-wrapper 
-                ul.advantage__cards.advantage__cards--left
-                    -var i = 0
-                    -var g = 0
-                    each val in title
-                        li
-                            .advantage__card
-                                h3.advantage__title=val
-                                span.advantage__desc-small=small[i] 
-                                p.advantage__desc=desc[i]
-                                -i++
-                                -g++
-                ul.advantage__cards.advantage__cards--right
-                    -var i = 0
-                    -var g = 0
-                    each val in title
-                        li
-                            .advantage__card
-                                h3.advantage__title=val
-                                span.advantage__desc-small=small[i] 
-                                p.advantage__desc=desc[i]
-                                -i++
-                                -g++
-                ul.advantage__cards.advantage__cards--center
+                //- ul.advantage__cards.advantage__cards--left
+                //-     -var i = 0
+                //-     -var g = 0
+                //-     each val in title
+                //-         li
+                //-             .advantage__card
+                //-                 h3.advantage__title=val
+                //-                 span.advantage__desc-small=small[i] 
+                //-                 p.advantage__desc=desc[i]
+                //-                 -i++
+                //-                 -g++
+                //- ul.advantage__cards.advantage__cards--right
+                //-     -var i = 0
+                //-     -var g = 0
+                //-     each val in title
+                //-         li
+                //-             .advantage__card
+                //-                 h3.advantage__title=val
+                //-                 span.advantage__desc-small=small[i] 
+                //-                 p.advantage__desc=desc[i]
+                //-                 -i++
+                //-                 -g++
+                ul.advantage__cards.advantage__cards--center.owl-carousel.owl-theme
                     -var i = 0
                     -var g = 0
                     each val in title
